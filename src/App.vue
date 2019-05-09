@@ -1,10 +1,49 @@
 <template>
+<!-- MAIN CONTAINER -->
   <div id="app">
+    <!-- START OF SIDEBAR NAV -->
+     <div id="sidenav" class="sidebar-fixed position-fixed">
+      <a>
+        <img alt class="sidenavlogo" src="./assets/logo_transparent.png">
+      </a>
+      <mdb-list-group class="list-group-flush">
+        <!-- <router-link to="/dashboard" @click.native="activeItem = 1"> -->
+        <mdb-list-group-item :action="true" :class="activeItem === 1 && 'active'">
+          Risk Dashboard
+          <mdb-icon icon="chart-line" class="text-right"/>
+        </mdb-list-group-item>
+        <!-- </router-link> -->
+        <!-- <router-link to="/projects" @click.native="activeItem = 2"> -->
+        <mdb-list-group-item :action="true" :class="activeItem === 2 && 'active'">
+          Projects
+          <mdb-icon icon="hammer" class="text-right"/>
+        </mdb-list-group-item>
+        <!-- </router-link> -->
+        <!-- <router-link to="/reports" @click.native="activeItem = 3"> -->
+          <mdb-list-group-item :action="true" :class="activeItem === 3 && 'active'">
+            Reports
+            <mdb-icon icon="print" class="text-right"/>
+          </mdb-list-group-item>
+        <!-- </router-link> -->
+        <!-- <router-link to="/accountinfo" @click.native="activeItem = 3"> -->
+          <mdb-list-group-item :action="true" :class="activeItem === 3 && 'active'">
+            Account Info
+            <mdb-icon icon="briefcase" class="text-right"/>
+          </mdb-list-group-item>
+        <!-- </router-link> -->
+      </mdb-list-group>
+    </div>
+    <!-- END OF SIDEBAR NAV -->
+
+
+    <!-- CONTAINER POSITIONING ALL COMPONENTS NEXT TO SIDENAV -->
     <div class="grid-container">
       <mdb-navbar expand="large" dark color="unique">
-        <!-- Navbar brand -->
+        <!-- NAVBAR BRAND. HOLDING ON TO THIS FOR LATER USE CASE -->
         <!-- <mdb-navbar-brand href="#">
         </mdb-navbar-brand>-->
+
+        <!-- START OF TOP NAVBAR -->
         <mdb-navbar-toggler>
           <mdb-navbar-nav right>
             <mdb-dropdown tag="li" class="nav-item">
@@ -24,6 +63,7 @@
           </mdb-navbar-nav>
         </mdb-navbar-toggler>
       </mdb-navbar>
+      <!-- END OF TOP NAVBAR -->
 
       <mdb-container-fluid>
         <mdb-row>
@@ -874,38 +914,6 @@
       </div>
       <!-- Footer -->
     </div>
-
-    <div class="sidebar-fixed position-fixed">
-      <a class="logo-wrapper">
-        <img alt class="img-fluid" src>
-      </a>
-      <mdb-list-group class="list-group-flush">
-        <!-- <router-link to="/dashboard" @click.native="activeItem = 1"> -->
-        <mdb-list-group-item :action="true" :class="activeItem === 1 && 'active'">
-          Risk Dashboard
-          <mdb-icon icon="chart-line" class="text-right"/>
-        </mdb-list-group-item>
-        <!-- </router-link> -->
-        <!-- <router-link to="/projects" @click.native="activeItem = 2"> -->
-        <mdb-list-group-item :action="true" :class="activeItem === 2 && 'active'">
-          Projects
-          <mdb-icon icon="hammer" class="text-right"/>
-        </mdb-list-group-item>
-        <!-- </router-link> -->
-        <router-link to="/reports" @click.native="activeItem = 3">
-          <mdb-list-group-item :action="true" :class="activeItem === 3 && 'active'">
-            Reports
-            <mdb-icon icon="print" class="text-right"/>
-          </mdb-list-group-item>
-        </router-link>
-        <router-link to="/accountinfo" @click.native="activeItem = 3">
-          <mdb-list-group-item :action="true" :class="activeItem === 3 && 'active'">
-            Account Info
-            <mdb-icon icon="briefcase" class="text-right"/>
-          </mdb-list-group-item>
-        </router-link>
-      </mdb-list-group>
-    </div>
   </div>
 </template>
 
@@ -1177,6 +1185,13 @@ export default {
 </script>
 
 <style>
+.sidenavlogo {
+  width: 9em;
+}
+
+#sidenav {
+ /* CAN BE USED TO COLOR SIDENAV LATER */
+}
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
   background-color: rgb(78, 78, 78);
