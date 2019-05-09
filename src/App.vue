@@ -13,8 +13,8 @@
                 <span class="caret"></span>
               </mdb-dropdown-toggle>
               <mdb-dropdown-menu>
-                <mdb-dropdown-item>Choice One</mdb-dropdown-item>
-                <mdb-dropdown-item>Choice Two</mdb-dropdown-item>
+                <mdb-dropdown-item>My Projects</mdb-dropdown-item>
+                <mdb-dropdown-item>Help</mdb-dropdown-item>
                 <mdb-dropdown-item>Logout</mdb-dropdown-item>
               </mdb-dropdown-menu>
             </mdb-dropdown>
@@ -43,15 +43,36 @@
                     </mdb-card-header>
                     <b-collapse id="accordion-1" accordion="my-accordion" role="tabpanel">
                       <mdb-card-body>
-                        
-                        <mdb-carousel showControls>
-                        <mdb-carousel-item>
-                          <p>Risk Rating: <mdb-btn tag="a" gradient="blue" floating size="sm" class="text-white circle-icon">3</mdb-btn></p>
-                          <h2 class="text-center"><strong class="text-muted">10GA</strong></h2>
-                        </mdb-carousel-item>
-                        <mdb-carousel-item>
-                          <p>Project Completion: <mdb-btn tag="a" gradient="blue" floating size="sm" class="text-white circle-icon">3</mdb-btn></p>
-                                <vue-circle class="progress-circle"
+                        <mdb-carousel showControls data-interval="false">
+                          <mdb-carousel-item>
+                            <p>
+                              Risk Rating:
+                              <mdb-btn
+                                tag="a"
+                                gradient="blue"
+                                floating
+                                size="sm"
+                                class="text-white circle-icon"
+                              >3</mdb-btn>
+                            </p>
+                            <h2 class="text-center">
+                              <strong>10GA</strong>
+                            </h2>
+                          </mdb-carousel-item>
+                          <mdb-carousel-item>
+                            <p>
+                              Project Completion:
+                              <mdb-btn
+                                tag="a"
+                                gradient="blue"
+                                floating
+                                size="sm"
+                                class="text-white circle-icon"
+                              >3</mdb-btn>
+                            </p>
+                            <div class="d-flex justify-content-center">
+                              <vue-circle
+                                class
                                 :progress="87"
                                 :size="100"
                                 :reverse="false"
@@ -64,12 +85,24 @@
                                 :thickness="10"
                                 :show-percent="true"
                                 @vue-circle-progress="progress"
-                                @vue-circle-end="progress_end">
-                              </vue-circle>
-                        </mdb-carousel-item>
-                        <mdb-carousel-item>
-                          <p>Budget Used: <mdb-btn tag="a" gradient="blue" floating size="sm" class="text-white circle-icon">3</mdb-btn></p>
-                          <vue-circle class="progress-circle"
+                                @vue-circle-end="progress_end"
+                              ></vue-circle>
+                            </div>
+                          </mdb-carousel-item>
+                          <mdb-carousel-item>
+                            <p>
+                              Budget Used:
+                              <mdb-btn
+                                tag="a"
+                                gradient="blue"
+                                floating
+                                size="sm"
+                                class="text-white circle-icon"
+                              >3</mdb-btn>
+                            </p>
+                            <div class="d-flex justify-content-center">
+                              <vue-circle
+                                class
                                 :progress="43"
                                 :size="100"
                                 :reverse="false"
@@ -82,10 +115,11 @@
                                 :thickness="10"
                                 :show-percent="true"
                                 @vue-circle-progress="progress"
-                                @vue-circle-end="progress_end">
-                              </vue-circle>
-                        </mdb-carousel-item>
-                       </mdb-carousel>
+                                @vue-circle-end="progress_end"
+                              ></vue-circle>
+                            </div>
+                          </mdb-carousel-item>
+                        </mdb-carousel>
                       </mdb-card-body>
                     </b-collapse>
                   </mdb-card>
@@ -99,15 +133,36 @@
                     </b-card-header>
                     <b-collapse id="accordion-2" accordion="my-accordion" role="tabpanel">
                       <mdb-card-body>
-                        
                         <mdb-carousel showControls>
-                        <mdb-carousel-item>
-                          <p>Risk Rating: <mdb-btn tag="a" gradient="blue" floating size="sm" class="text-white circle-icon">3</mdb-btn></p>
-                          <h2 class="text-center"><strong class="text-muted">10GA</strong></h2>
-                        </mdb-carousel-item>
-                        <mdb-carousel-item>
-                          <p>Project Completion: <mdb-btn tag="a" gradient="blue" floating size="sm" class="text-white circle-icon">3</mdb-btn></p>
-                                <vue-circle class="progress-circle"
+                          <mdb-carousel-item>
+                            <p>
+                              Risk Rating:
+                              <mdb-btn
+                                tag="a"
+                                gradient="blue"
+                                floating
+                                size="sm"
+                                class="text-white circle-icon"
+                              >3</mdb-btn>
+                            </p>
+                            <h2 class="text-center">
+                              <strong>9GA</strong>
+                            </h2>
+                          </mdb-carousel-item>
+                          <mdb-carousel-item>
+                            <p>
+                              Project Completion:
+                              <mdb-btn
+                                tag="a"
+                                gradient="blue"
+                                floating
+                                size="sm"
+                                class="text-white circle-icon"
+                              >3</mdb-btn>
+                            </p>
+                            <div class="d-flex justify-content-center">
+                              <vue-circle
+                                class
                                 :progress="87"
                                 :size="100"
                                 :reverse="false"
@@ -120,12 +175,23 @@
                                 :thickness="10"
                                 :show-percent="true"
                                 @vue-circle-progress="progress"
-                                @vue-circle-end="progress_end">
-                              </vue-circle>
-                        </mdb-carousel-item>
-                        <mdb-carousel-item>
-                          <p>Budget Used: <mdb-btn tag="a" gradient="blue" floating size="sm" class="text-white circle-icon">3</mdb-btn></p>
-                          <vue-circle class="progress-circle"
+                                @vue-circle-end="progress_end"
+                              ></vue-circle>
+                            </div>
+                          </mdb-carousel-item>
+                          <mdb-carousel-item>
+                            <p>
+                              Budget Used:
+                              <mdb-btn
+                                tag="a"
+                                gradient="blue"
+                                floating
+                                size="sm"
+                                class="text-white circle-icon"
+                              >3</mdb-btn>
+                            </p>
+                            <div class="d-flex justify-content-center">
+                              <vue-circle
                                 :progress="43"
                                 :size="100"
                                 :reverse="false"
@@ -138,10 +204,11 @@
                                 :thickness="10"
                                 :show-percent="true"
                                 @vue-circle-progress="progress"
-                                @vue-circle-end="progress_end">
-                              </vue-circle>
-                        </mdb-carousel-item>
-                       </mdb-carousel>
+                                @vue-circle-end="progress_end"
+                              ></vue-circle>
+                            </div>
+                          </mdb-carousel-item>
+                        </mdb-carousel>
                       </mdb-card-body>
                     </b-collapse>
                   </mdb-card>
@@ -154,16 +221,36 @@
                       </mdb-btn>
                     </b-card-header>
                     <b-collapse id="accordion-3" accordion="my-accordion" role="tabpanel">
-                       <mdb-card-body>
-                        
+                      <mdb-card-body>
                         <mdb-carousel showControls>
-                        <mdb-carousel-item>
-                          <p>Risk Rating: <mdb-btn tag="a" gradient="blue" floating size="sm" class="text-white circle-icon">3</mdb-btn></p>
-                          <h2 class="text-center"><strong class="text-muted">10GA</strong></h2>
-                        </mdb-carousel-item>
-                        <mdb-carousel-item>
-                          <p>Project Completion: <mdb-btn tag="a" gradient="blue" floating size="sm" class="text-white circle-icon">3</mdb-btn></p>
-                                <vue-circle class="progress-circle"
+                          <mdb-carousel-item>
+                            <p>
+                              Risk Rating:
+                              <mdb-btn
+                                tag="a"
+                                gradient="blue"
+                                floating
+                                size="sm"
+                                class="text-white circle-icon"
+                              >3</mdb-btn>
+                            </p>
+                            <h2 class="text-center">
+                              <strong>8GA</strong>
+                            </h2>
+                          </mdb-carousel-item>
+                          <mdb-carousel-item>
+                            <p>
+                              Project Completion:
+                              <mdb-btn
+                                tag="a"
+                                gradient="blue"
+                                floating
+                                size="sm"
+                                class="text-white circle-icon"
+                              >3</mdb-btn>
+                            </p>
+                            <div class="d-flex justify-content-center">
+                              <vue-circle
                                 :progress="87"
                                 :size="100"
                                 :reverse="false"
@@ -176,12 +263,23 @@
                                 :thickness="10"
                                 :show-percent="true"
                                 @vue-circle-progress="progress"
-                                @vue-circle-end="progress_end">
-                              </vue-circle>
-                        </mdb-carousel-item>
-                        <mdb-carousel-item>
-                          <p>Budget Used: <mdb-btn tag="a" gradient="blue" floating size="sm" class="text-white circle-icon">3</mdb-btn></p>
-                          <vue-circle class="progress-circle"
+                                @vue-circle-end="progress_end"
+                              ></vue-circle>
+                            </div>
+                          </mdb-carousel-item>
+                          <mdb-carousel-item>
+                            <p>
+                              Budget Used:
+                              <mdb-btn
+                                tag="a"
+                                gradient="blue"
+                                floating
+                                size="sm"
+                                class="text-white circle-icon"
+                              >3</mdb-btn>
+                            </p>
+                            <div class="d-flex justify-content-center">
+                              <vue-circle
                                 :progress="43"
                                 :size="100"
                                 :reverse="false"
@@ -194,10 +292,11 @@
                                 :thickness="10"
                                 :show-percent="true"
                                 @vue-circle-progress="progress"
-                                @vue-circle-end="progress_end">
-                              </vue-circle>
-                        </mdb-carousel-item>
-                       </mdb-carousel>
+                                @vue-circle-end="progress_end"
+                              ></vue-circle>
+                            </div>
+                          </mdb-carousel-item>
+                        </mdb-carousel>
                       </mdb-card-body>
                     </b-collapse>
                   </mdb-card>
@@ -222,51 +321,83 @@
                     </mdb-btn>
                   </b-card-header>
                   <b-collapse id="accordion-4" accordion="my-accordion" role="tabpanel">
-                     <mdb-card-body>
-                        
-                        <mdb-carousel showControls>
+                    <mdb-card-body>
+                      <mdb-carousel showControls>
                         <mdb-carousel-item>
-                          <p>Risk Rating: <mdb-btn tag="a" gradient="blue" floating size="sm" class="text-white circle-icon">3</mdb-btn></p>
-                          <h2 class="text-center"><strong class="text-muted">10GA</strong></h2>
+                          <p>
+                            Risk Rating:
+                            <mdb-btn
+                              tag="a"
+                              gradient="blue"
+                              floating
+                              size="sm"
+                              class="text-white circle-icon"
+                            >3</mdb-btn>
+                          </p>
+                          <h2 class="text-center">
+                            <strong>12GA</strong>
+                          </h2>
                         </mdb-carousel-item>
                         <mdb-carousel-item>
-                          <p>Project Completion: <mdb-btn tag="a" gradient="blue" floating size="sm" class="text-white circle-icon">3</mdb-btn></p>
-                                <vue-circle class="progress-circle"
-                                :progress="87"
-                                :size="100"
-                                :reverse="false"
-                                line-cap="round"
-                                :fill="fill"
-                                empty-fill="rgba(0, 0, 0, .1)"
-                                :animation-start-value="0.0"
-                                :start-angle="0"
-                                insert-mode="append"
-                                :thickness="10"
-                                :show-percent="true"
-                                @vue-circle-progress="progress"
-                                @vue-circle-end="progress_end">
-                              </vue-circle>
+                          <p>
+                            Project Completion:
+                            <mdb-btn
+                              tag="a"
+                              gradient="blue"
+                              floating
+                              size="sm"
+                              class="text-white circle-icon"
+                            >3</mdb-btn>
+                          </p>
+                          <div class="d-flex justify-content-center">
+                            <vue-circle
+                              :progress="87"
+                              :size="100"
+                              :reverse="false"
+                              line-cap="round"
+                              :fill="fill"
+                              empty-fill="rgba(0, 0, 0, .1)"
+                              :animation-start-value="0.0"
+                              :start-angle="0"
+                              insert-mode="append"
+                              :thickness="10"
+                              :show-percent="true"
+                              @vue-circle-progress="progress"
+                              @vue-circle-end="progress_end"
+                            ></vue-circle>
+                          </div>
                         </mdb-carousel-item>
                         <mdb-carousel-item>
-                          <p>Budget Used: <mdb-btn tag="a" gradient="blue" floating size="sm" class="text-white circle-icon">3</mdb-btn></p>
-                          <vue-circle class="progress-circle"
-                                :progress="43"
-                                :size="100"
-                                :reverse="false"
-                                line-cap="round"
-                                :fill="fill"
-                                empty-fill="rgba(0, 0, 0, .1)"
-                                :animation-start-value="0.0"
-                                :start-angle="0"
-                                insert-mode="append"
-                                :thickness="10"
-                                :show-percent="true"
-                                @vue-circle-progress="progress"
-                                @vue-circle-end="progress_end">
-                              </vue-circle>
+                          <p>
+                            Budget Used:
+                            <mdb-btn
+                              tag="a"
+                              gradient="blue"
+                              floating
+                              size="sm"
+                              class="text-white circle-icon"
+                            >3</mdb-btn>
+                          </p>
+                          <div class="d-flex justify-content-center">
+                            <vue-circle
+                              :progress="43"
+                              :size="100"
+                              :reverse="false"
+                              line-cap="round"
+                              :fill="fill"
+                              empty-fill="rgba(0, 0, 0, .1)"
+                              :animation-start-value="0.0"
+                              :start-angle="0"
+                              insert-mode="append"
+                              :thickness="10"
+                              :show-percent="true"
+                              @vue-circle-progress="progress"
+                              @vue-circle-end="progress_end"
+                            ></vue-circle>
+                          </div>
                         </mdb-carousel-item>
-                       </mdb-carousel>
-                      </mdb-card-body>
+                      </mdb-carousel>
+                    </mdb-card-body>
                   </b-collapse>
                 </mdb-card>
                 <mdb-card no-body class="mb-1">
@@ -277,51 +408,83 @@
                     </mdb-btn>
                   </b-card-header>
                   <b-collapse id="accordion-5" accordion="my-accordion" role="tabpanel">
-                     <mdb-card-body>
-                        
-                        <mdb-carousel showControls>
+                    <mdb-card-body>
+                      <mdb-carousel showControls>
                         <mdb-carousel-item>
-                          <p>Risk Rating: <mdb-btn tag="a" gradient="blue" floating size="sm" class="text-white circle-icon">3</mdb-btn></p>
-                          <h2 class="text-center"><strong class="text-muted">10GA</strong></h2>
+                          <p>
+                            Risk Rating:
+                            <mdb-btn
+                              tag="a"
+                              gradient="blue"
+                              floating
+                              size="sm"
+                              class="text-white circle-icon"
+                            >3</mdb-btn>
+                          </p>
+                          <h2 class="text-center">
+                            <strong>16GA</strong>
+                          </h2>
                         </mdb-carousel-item>
                         <mdb-carousel-item>
-                          <p>Project Completion: <mdb-btn tag="a" gradient="blue" floating size="sm" class="text-white circle-icon">3</mdb-btn></p>
-                                <vue-circle class="progress-circle"
-                                :progress="87"
-                                :size="100"
-                                :reverse="false"
-                                line-cap="round"
-                                :fill="fill"
-                                empty-fill="rgba(0, 0, 0, .1)"
-                                :animation-start-value="0.0"
-                                :start-angle="0"
-                                insert-mode="append"
-                                :thickness="10"
-                                :show-percent="true"
-                                @vue-circle-progress="progress"
-                                @vue-circle-end="progress_end">
-                              </vue-circle>
+                          <p>
+                            Project Completion:
+                            <mdb-btn
+                              tag="a"
+                              gradient="blue"
+                              floating
+                              size="sm"
+                              class="text-white circle-icon"
+                            >3</mdb-btn>
+                          </p>
+                          <div class="d-flex justify-content-center">
+                            <vue-circle
+                              :progress="87"
+                              :size="100"
+                              :reverse="false"
+                              line-cap="round"
+                              :fill="fill"
+                              empty-fill="rgba(0, 0, 0, .1)"
+                              :animation-start-value="0.0"
+                              :start-angle="0"
+                              insert-mode="append"
+                              :thickness="10"
+                              :show-percent="true"
+                              @vue-circle-progress="progress"
+                              @vue-circle-end="progress_end"
+                            ></vue-circle>
+                          </div>
                         </mdb-carousel-item>
                         <mdb-carousel-item>
-                          <p>Budget Used: <mdb-btn tag="a" gradient="blue" floating size="sm" class="text-white circle-icon">3</mdb-btn></p>
-                          <vue-circle class="progress-circle"
-                                :progress="43"
-                                :size="100"
-                                :reverse="false"
-                                line-cap="round"
-                                :fill="fill"
-                                empty-fill="rgba(0, 0, 0, .1)"
-                                :animation-start-value="0.0"
-                                :start-angle="0"
-                                insert-mode="append"
-                                :thickness="10"
-                                :show-percent="true"
-                                @vue-circle-progress="progress"
-                                @vue-circle-end="progress_end">
-                              </vue-circle>
+                          <p>
+                            Budget Used:
+                            <mdb-btn
+                              tag="a"
+                              gradient="blue"
+                              floating
+                              size="sm"
+                              class="text-white circle-icon"
+                            >3</mdb-btn>
+                          </p>
+                          <div class="d-flex justify-content-center">
+                            <vue-circle
+                              :progress="43"
+                              :size="100"
+                              :reverse="false"
+                              line-cap="round"
+                              :fill="fill"
+                              empty-fill="rgba(0, 0, 0, .1)"
+                              :animation-start-value="0.0"
+                              :start-angle="0"
+                              insert-mode="append"
+                              :thickness="10"
+                              :show-percent="true"
+                              @vue-circle-progress="progress"
+                              @vue-circle-end="progress_end"
+                            ></vue-circle>
+                          </div>
                         </mdb-carousel-item>
-                       </mdb-carousel>
-                      </mdb-card-body>
+                      </mdb-carousel>
+                    </mdb-card-body>
                   </b-collapse>
                 </mdb-card>
                 <!-- END OF MIDDLE ACCORDION -->
@@ -344,51 +507,83 @@
                     </mdb-btn>
                   </b-card-header>
                   <b-collapse id="accordion-7" accordion="my-accordion" role="tabpanel">
-                     <mdb-card-body>
-                        
-                        <mdb-carousel showControls>
+                    <mdb-card-body>
+                      <mdb-carousel showControls>
                         <mdb-carousel-item>
-                          <p>Risk Rating: <mdb-btn tag="a" gradient="blue" floating size="sm" class="text-white circle-icon">3</mdb-btn></p>
-                          <h2 class="text-center"><strong class="text-muted">10GA</strong></h2>
+                          <p>
+                            Risk Rating:
+                            <mdb-btn
+                              tag="a"
+                              gradient="blue"
+                              floating
+                              size="sm"
+                              class="text-white circle-icon"
+                            >3</mdb-btn>
+                          </p>
+                          <h2 class="text-center">
+                            <strong>21GA</strong>
+                          </h2>
                         </mdb-carousel-item>
                         <mdb-carousel-item>
-                          <p>Project Completion: <mdb-btn tag="a" gradient="blue" floating size="sm" class="text-white circle-icon">3</mdb-btn></p>
-                                <vue-circle class="progress-circle"
-                                :progress="87"
-                                :size="100"
-                                :reverse="false"
-                                line-cap="round"
-                                :fill="fill"
-                                empty-fill="rgba(0, 0, 0, .1)"
-                                :animation-start-value="0.0"
-                                :start-angle="0"
-                                insert-mode="append"
-                                :thickness="10"
-                                :show-percent="true"
-                                @vue-circle-progress="progress"
-                                @vue-circle-end="progress_end">
-                              </vue-circle>
+                          <p>
+                            Project Completion:
+                            <mdb-btn
+                              tag="a"
+                              gradient="blue"
+                              floating
+                              size="sm"
+                              class="text-white circle-icon"
+                            >3</mdb-btn>
+                          </p>
+                          <div class="d-flex justify-content-center">
+                            <vue-circle
+                              :progress="87"
+                              :size="100"
+                              :reverse="false"
+                              line-cap="round"
+                              :fill="fill"
+                              empty-fill="rgba(0, 0, 0, .1)"
+                              :animation-start-value="0.0"
+                              :start-angle="0"
+                              insert-mode="append"
+                              :thickness="10"
+                              :show-percent="true"
+                              @vue-circle-progress="progress"
+                              @vue-circle-end="progress_end"
+                            ></vue-circle>
+                          </div>
                         </mdb-carousel-item>
                         <mdb-carousel-item>
-                          <p>Budget Used: <mdb-btn tag="a" gradient="blue" floating size="sm" class="text-white circle-icon">3</mdb-btn></p>
-                          <vue-circle class="progress-circle"
-                                :progress="43"
-                                :size="100"
-                                :reverse="false"
-                                line-cap="round"
-                                :fill="fill"
-                                empty-fill="rgba(0, 0, 0, .1)"
-                                :animation-start-value="0.0"
-                                :start-angle="0"
-                                insert-mode="append"
-                                :thickness="10"
-                                :show-percent="true"
-                                @vue-circle-progress="progress"
-                                @vue-circle-end="progress_end">
-                              </vue-circle>
+                          <p>
+                            Budget Used:
+                            <mdb-btn
+                              tag="a"
+                              gradient="blue"
+                              floating
+                              size="sm"
+                              class="text-white circle-icon"
+                            >3</mdb-btn>
+                          </p>
+                          <div class="d-flex justify-content-center">
+                            <vue-circle
+                              :progress="43"
+                              :size="100"
+                              :reverse="false"
+                              line-cap="round"
+                              :fill="fill"
+                              empty-fill="rgba(0, 0, 0, .1)"
+                              :animation-start-value="0.0"
+                              :start-angle="0"
+                              insert-mode="append"
+                              :thickness="10"
+                              :show-percent="true"
+                              @vue-circle-progress="progress"
+                              @vue-circle-end="progress_end"
+                            ></vue-circle>
+                          </div>
                         </mdb-carousel-item>
-                       </mdb-carousel>
-                      </mdb-card-body>
+                      </mdb-carousel>
+                    </mdb-card-body>
                   </b-collapse>
                 </mdb-card>
                 <mdb-card no-body class="mb-1">
@@ -399,51 +594,83 @@
                     </mdb-btn>
                   </b-card-header>
                   <b-collapse id="accordion-8" accordion="my-accordion" role="tabpanel">
-                     <mdb-card-body>
-                        
-                        <mdb-carousel showControls>
+                    <mdb-card-body>
+                      <mdb-carousel showControls>
                         <mdb-carousel-item>
-                          <p>Risk Rating: <mdb-btn tag="a" gradient="blue" floating size="sm" class="text-white circle-icon">3</mdb-btn></p>
-                          <h2 class="text-center"><strong class="text-muted">10GA</strong></h2>
+                          <p>
+                            Risk Rating:
+                            <mdb-btn
+                              tag="a"
+                              gradient="blue"
+                              floating
+                              size="sm"
+                              class="text-white circle-icon"
+                            >3</mdb-btn>
+                          </p>
+                          <h2 class="text-center">
+                            <strong>23GA</strong>
+                          </h2>
                         </mdb-carousel-item>
                         <mdb-carousel-item>
-                          <p>Project Completion: <mdb-btn tag="a" gradient="blue" floating size="sm" class="text-white circle-icon">3</mdb-btn></p>
-                                <vue-circle class="progress-circle"
-                                :progress="87"
-                                :size="100"
-                                :reverse="false"
-                                line-cap="round"
-                                :fill="fill"
-                                empty-fill="rgba(0, 0, 0, .1)"
-                                :animation-start-value="0.0"
-                                :start-angle="0"
-                                insert-mode="append"
-                                :thickness="10"
-                                :show-percent="true"
-                                @vue-circle-progress="progress"
-                                @vue-circle-end="progress_end">
-                              </vue-circle>
+                          <p>
+                            Project Completion:
+                            <mdb-btn
+                              tag="a"
+                              gradient="blue"
+                              floating
+                              size="sm"
+                              class="text-white circle-icon"
+                            >3</mdb-btn>
+                          </p>
+                          <div class="d-flex justify-content-center">
+                            <vue-circle
+                              :progress="87"
+                              :size="100"
+                              :reverse="false"
+                              line-cap="round"
+                              :fill="fill"
+                              empty-fill="rgba(0, 0, 0, .1)"
+                              :animation-start-value="0.0"
+                              :start-angle="0"
+                              insert-mode="append"
+                              :thickness="10"
+                              :show-percent="true"
+                              @vue-circle-progress="progress"
+                              @vue-circle-end="progress_end"
+                            ></vue-circle>
+                          </div>
                         </mdb-carousel-item>
                         <mdb-carousel-item>
-                          <p>Budget Used: <mdb-btn tag="a" gradient="blue" floating size="sm" class="text-white circle-icon">3</mdb-btn></p>
-                          <vue-circle class="progress-circle"
-                                :progress="43"
-                                :size="100"
-                                :reverse="false"
-                                line-cap="round"
-                                :fill="fill"
-                                empty-fill="rgba(0, 0, 0, .1)"
-                                :animation-start-value="0.0"
-                                :start-angle="0"
-                                insert-mode="append"
-                                :thickness="10"
-                                :show-percent="true"
-                                @vue-circle-progress="progress"
-                                @vue-circle-end="progress_end">
-                              </vue-circle>
+                          <p>
+                            Budget Used:
+                            <mdb-btn
+                              tag="a"
+                              gradient="blue"
+                              floating
+                              size="sm"
+                              class="text-white circle-icon"
+                            >3</mdb-btn>
+                          </p>
+                          <div class="d-flex justify-content-center">
+                            <vue-circle
+                              :progress="43"
+                              :size="100"
+                              :reverse="false"
+                              line-cap="round"
+                              :fill="fill"
+                              empty-fill="rgba(0, 0, 0, .1)"
+                              :animation-start-value="0.0"
+                              :start-angle="0"
+                              insert-mode="append"
+                              :thickness="10"
+                              :show-percent="true"
+                              @vue-circle-progress="progress"
+                              @vue-circle-end="progress_end"
+                            ></vue-circle>
+                          </div>
                         </mdb-carousel-item>
-                       </mdb-carousel>
-                      </mdb-card-body>
+                      </mdb-carousel>
+                    </mdb-card-body>
                   </b-collapse>
                 </mdb-card>
                 <mdb-card no-body class="mb-1">
@@ -454,51 +681,83 @@
                     </mdb-btn>
                   </b-card-header>
                   <b-collapse id="accordion-9" accordion="my-accordion" role="tabpanel">
-                     <mdb-card-body>
-                        
-                        <mdb-carousel showControls>
+                    <mdb-card-body>
+                      <mdb-carousel showControls>
                         <mdb-carousel-item>
-                          <p>Risk Rating: <mdb-btn tag="a" gradient="blue" floating size="sm" class="text-white circle-icon">3</mdb-btn></p>
-                          <h2 class="text-center"><strong class="text-muted">10GA</strong></h2>
+                          <p>
+                            Risk Rating:
+                            <mdb-btn
+                              tag="a"
+                              gradient="blue"
+                              floating
+                              size="sm"
+                              class="text-white circle-icon"
+                            >3</mdb-btn>
+                          </p>
+                          <h2 class="text-center">
+                            <strong>32GA</strong>
+                          </h2>
                         </mdb-carousel-item>
                         <mdb-carousel-item>
-                          <p>Project Completion: <mdb-btn tag="a" gradient="blue" floating size="sm" class="text-white circle-icon">3</mdb-btn></p>
-                                <vue-circle class="progress-circle"
-                                :progress="87"
-                                :size="100"
-                                :reverse="false"
-                                line-cap="round"
-                                :fill="fill"
-                                empty-fill="rgba(0, 0, 0, .1)"
-                                :animation-start-value="0.0"
-                                :start-angle="0"
-                                insert-mode="append"
-                                :thickness="10"
-                                :show-percent="true"
-                                @vue-circle-progress="progress"
-                                @vue-circle-end="progress_end">
-                              </vue-circle>
+                          <p>
+                            Project Completion:
+                            <mdb-btn
+                              tag="a"
+                              gradient="blue"
+                              floating
+                              size="sm"
+                              class="text-white circle-icon"
+                            >3</mdb-btn>
+                          </p>
+                          <div class="d-flex justify-content-center">
+                            <vue-circle
+                              :progress="87"
+                              :size="100"
+                              :reverse="false"
+                              line-cap="round"
+                              :fill="fill"
+                              empty-fill="rgba(0, 0, 0, .1)"
+                              :animation-start-value="0.0"
+                              :start-angle="0"
+                              insert-mode="append"
+                              :thickness="10"
+                              :show-percent="true"
+                              @vue-circle-progress="progress"
+                              @vue-circle-end="progress_end"
+                            ></vue-circle>
+                          </div>
                         </mdb-carousel-item>
                         <mdb-carousel-item>
-                          <p>Budget Used: <mdb-btn tag="a" gradient="blue" floating size="sm" class="text-white circle-icon">3</mdb-btn></p>
-                          <vue-circle class="progress-circle"
-                                :progress="43"
-                                :size="100"
-                                :reverse="false"
-                                line-cap="round"
-                                :fill="fill"
-                                empty-fill="rgba(0, 0, 0, .1)"
-                                :animation-start-value="0.0"
-                                :start-angle="0"
-                                insert-mode="append"
-                                :thickness="10"
-                                :show-percent="true"
-                                @vue-circle-progress="progress"
-                                @vue-circle-end="progress_end">
-                              </vue-circle>
+                          <p>
+                            Budget Used:
+                            <mdb-btn
+                              tag="a"
+                              gradient="blue"
+                              floating
+                              size="sm"
+                              class="text-white circle-icon"
+                            >3</mdb-btn>
+                          </p>
+                          <div class="d-flex justify-content-center">
+                            <vue-circle
+                              :progress="43"
+                              :size="100"
+                              :reverse="false"
+                              line-cap="round"
+                              :fill="fill"
+                              empty-fill="rgba(0, 0, 0, .1)"
+                              :animation-start-value="0.0"
+                              :start-angle="0"
+                              insert-mode="append"
+                              :thickness="10"
+                              :show-percent="true"
+                              @vue-circle-progress="progress"
+                              @vue-circle-end="progress_end"
+                            ></vue-circle>
+                          </div>
                         </mdb-carousel-item>
-                       </mdb-carousel>
-                      </mdb-card-body>
+                      </mdb-carousel>
+                    </mdb-card-body>
                   </b-collapse>
                 </mdb-card>
                 <mdb-card no-body class="mb-1">
@@ -509,51 +768,83 @@
                     </mdb-btn>
                   </b-card-header>
                   <b-collapse id="accordion-10" accordion="my-accordion" role="tabpanel">
-                     <mdb-card-body>
-                        
-                        <mdb-carousel showControls>
+                    <mdb-card-body>
+                      <mdb-carousel showControls>
                         <mdb-carousel-item>
-                          <p>Risk Rating: <mdb-btn tag="a" gradient="blue" floating size="sm" class="text-white circle-icon">3</mdb-btn></p>
-                          <h2 class="text-center"><strong class="text-muted">10GA</strong></h2>
+                          <p>
+                            Risk Rating:
+                            <mdb-btn
+                              tag="a"
+                              gradient="blue"
+                              floating
+                              size="sm"
+                              class="text-white circle-icon"
+                            >3</mdb-btn>
+                          </p>
+                          <h2 class="text-center">
+                            <strong>47GA</strong>
+                          </h2>
                         </mdb-carousel-item>
                         <mdb-carousel-item>
-                          <p>Project Completion: <mdb-btn tag="a" gradient="blue" floating size="sm" class="text-white circle-icon">3</mdb-btn></p>
-                                <vue-circle class="progress-circle"
-                                :progress="87"
-                                :size="100"
-                                :reverse="false"
-                                line-cap="round"
-                                :fill="fill"
-                                empty-fill="rgba(0, 0, 0, .1)"
-                                :animation-start-value="0.0"
-                                :start-angle="0"
-                                insert-mode="append"
-                                :thickness="10"
-                                :show-percent="true"
-                                @vue-circle-progress="progress"
-                                @vue-circle-end="progress_end">
-                              </vue-circle>
+                          <p>
+                            Project Completion:
+                            <mdb-btn
+                              tag="a"
+                              gradient="blue"
+                              floating
+                              size="sm"
+                              class="text-white circle-icon"
+                            >3</mdb-btn>
+                          </p>
+                          <div class="d-flex justify-content-center">
+                            <vue-circle
+                              :progress="87"
+                              :size="100"
+                              :reverse="false"
+                              line-cap="round"
+                              :fill="fill"
+                              empty-fill="rgba(0, 0, 0, .1)"
+                              :animation-start-value="0.0"
+                              :start-angle="0"
+                              insert-mode="append"
+                              :thickness="10"
+                              :show-percent="true"
+                              @vue-circle-progress="progress"
+                              @vue-circle-end="progress_end"
+                            ></vue-circle>
+                          </div>
                         </mdb-carousel-item>
                         <mdb-carousel-item>
-                          <p>Budget Used: <mdb-btn tag="a" gradient="blue" floating size="sm" class="text-white circle-icon">3</mdb-btn></p>
-                          <vue-circle class="progress-circle"
-                                :progress="43"
-                                :size="100"
-                                :reverse="false"
-                                line-cap="round"
-                                :fill="fill"
-                                empty-fill="rgba(0, 0, 0, .1)"
-                                :animation-start-value="0.0"
-                                :start-angle="0"
-                                insert-mode="append"
-                                :thickness="10"
-                                :show-percent="true"
-                                @vue-circle-progress="progress"
-                                @vue-circle-end="progress_end">
-                              </vue-circle>
+                          <p>
+                            Budget Used:
+                            <mdb-btn
+                              tag="a"
+                              gradient="blue"
+                              floating
+                              size="sm"
+                              class="text-white circle-icon"
+                            >3</mdb-btn>
+                          </p>
+                          <div class="d-flex justify-content-center">
+                            <vue-circle
+                              :progress="43"
+                              :size="100"
+                              :reverse="false"
+                              line-cap="round"
+                              :fill="fill"
+                              empty-fill="rgba(0, 0, 0, .1)"
+                              :animation-start-value="0.0"
+                              :start-angle="0"
+                              insert-mode="append"
+                              :thickness="10"
+                              :show-percent="true"
+                              @vue-circle-progress="progress"
+                              @vue-circle-end="progress_end"
+                            ></vue-circle>
+                          </div>
                         </mdb-carousel-item>
-                       </mdb-carousel>
-                      </mdb-card-body>
+                      </mdb-carousel>
+                    </mdb-card-body>
                   </b-collapse>
                 </mdb-card>
                 <!-- END OF LAST ACCORDION -->
@@ -567,7 +858,7 @@
       <mdb-container-fluid>
         <mdb-col>
           <mdb-card>
-            <mdb-card-header class="text-center">Weekly Breakdown</mdb-card-header>
+            <mdb-card-header class="text-center">Monthly Breakdown</mdb-card-header>
             <mdb-card-body>
               <div style="display: block">
                 <mdb-bar-chart :data="barChartData" :options="barChartOptions" :height="500"/>
@@ -578,8 +869,8 @@
       </mdb-container-fluid>
       <!-- Footer -->
       <div class="footer-copyright text-center py-3 footer-color" color="unique">
-        &copy; 2018 Copyright:
-        <a href="#">Dogs.com</a>
+        &copy; 2019 Copyright:
+        <a href="#">Handle.com</a>
       </div>
       <!-- Footer -->
     </div>
@@ -619,7 +910,7 @@
 </template>
 
 <script>
-import VueCircle from 'vue2-circle-progress';
+import VueCircle from "vue2-circle-progress";
 import {
   mdbContainer,
   mdbNavbar,
@@ -649,7 +940,6 @@ import {
   mdbCarousel,
   mdbCarouselItem
 } from "mdbvue";
-// import Dashboard from './components/Dashboard';
 export default {
   name: "App",
   components: {
@@ -685,7 +975,7 @@ export default {
   data() {
     return {
       // PROGRESS CIRCLE COLORS
-      fill : { gradient: ["#7c8fad", "#416399", "#b1d4e0"] },
+      fill: { gradient: ["#7c8fad", "#416399", "#b1d4e0"] },
       collapse2: false,
       collapse3: false,
       showFrameModalTop: false,
@@ -704,10 +994,10 @@ export default {
       showFluidModalBottom: false,
       methods: {
         // PROGRESS CIRCLE FUNCTIONS
-        progress(event,progress,stepValue){
+        progress(event, progress, stepValue) {
           console.log(stepValue);
         },
-        progress_end(event){
+        progress_end(event) {
           console.log("Circle progress end");
         }
       },
@@ -887,6 +1177,11 @@ export default {
 </script>
 
 <style>
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-color: rgb(78, 78, 78);
+  margin-top: 1.5em;
+}
 .circle-icon {
   float: right;
   line-height: 1.25em;
