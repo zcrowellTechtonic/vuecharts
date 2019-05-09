@@ -3,9 +3,12 @@
   <div id="app">
     <!-- START OF SIDEBAR NAV -->
      <div id="sidenav" class="sidebar-fixed position-fixed">
+                                   <div class="d-flex justify-content-center">
+
       <a>
         <img alt class="sidenavlogo" src="./assets/logo_transparent.png">
       </a>
+      </div>
       <mdb-list-group class="list-group-flush">
         <!-- <router-link to="/dashboard" @click.native="activeItem = 1"> -->
         <mdb-list-group-item :action="true" :class="activeItem === 1 && 'active'">
